@@ -93,8 +93,7 @@
       Array.from(coursesLinks)
         .forEach(link => {
           const item = link.parentElement.parentElement.parentElement;
-
-          if (link.innerText.indexOf(search.value) > -1) {
+          if (link.innerText.toLowerCase().indexOf(search.value.toLowerCase()) > -1) {
             item.classList.remove("hide");
           }
           else {
