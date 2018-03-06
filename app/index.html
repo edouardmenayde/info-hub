@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info hub</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Web Starter Kit">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#2F3BA2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <!-- Material Design icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+  <!-- Material Design Lite page styles:
+  You can choose other color schemes from the CDN, more info here http://www.getmdl.io/customize/index.html
+  Format: material.color1-color2.min.css, some examples:
+  material.red-teal.min.css
+  material.blue-orange.min.css
+  material.purple-indigo.min.css
+  -->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+
+  <!-- Your styles -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+    <div class="mdl-layout__header-row">
+      <h3>Info hub</h3>
+    </div>
+  </header>
+  <main class="mdl-layout__content" style="flex: 1 0 auto;">
+    <div class="mdl-layout__tab-panel is-active" id="overview">
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__supporting-text">
+            <h2>Cours</h2>
+
+            <datalist id="courses"></datalist>
+
+            <form action="#">
+              <div class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">search</i>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" autofocus type="text" id="search" list="courses">
+                <label class="mdl-textfield__label" for="search">Super j'ai cours de...</label>
+              </div>
+            </form>
+
+            <div class="demo-list-action mdl-list">
+              <div class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">link</i>
+                      <span>
+                        <a
+                          href="https://perso.liris.cnrs.fr/romuald.thion/dokuwiki/doku.php?id=enseignement:lifap5:start"
+                          target='_blank' rel="noopener noreferrer" class="course-link">LIFAP5 : Programmation fonctionnelle pour le WEB</a>
+                      </span>
+                    </span>
+              </div>
+              <div class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                       <i class="material-icons mdl-list__item-icon">settings_application</i>
+                      <span>
+                        <a href="https://perso.liris.cnrs.fr/alexandre.meyer/public_html/www/doku.php?id=lifap4"
+                           target='_blank'
+                           rel="noopener noreferrer" class="course-link">LIFAP4: Conception et développement d'applications</a>
+                      </span>
+                    </span>
+              </div>
+              <div class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">computer</i>
+                      <span><a href="http://perso.univ-lyon1.fr/fabien.rico/site/systeme:2018p:asr5" target='_blank'
+                               rel="noopener noreferrer" class="course-link">LIFASR5 : Système d'exploitation</a></span>
+                    </span>
+              </div>
+              <div class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">accessible</i>
+                      <span><a href="https://perso.liris.cnrs.fr/stephanie.jean-daubias/enseignement/IHM/"
+                               target='_blank' rel="noopener noreferrer">LIFIHM : Interface Homme-Machine</a></span>
+                    </span>
+              </div>
+              <div class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">3d_rotation</i>
+                      <span><a href="https://perso.liris.cnrs.fr/florence.zara/Wiki/doku.php?id=lifo41"
+                               target='_blank' rel="noopener noreferrer" class="course-link">LIFGRAPHIQUE : Informatique graphique (Florence Zara)</a></span>
+                    </span>
+              </div>
+              <div class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">add_box</i>
+                      <span><a class="course-link" href="http://math.univ-lyon1.fr/~malbos/"
+                               target='_blank' rel="noopener noreferrer">AMALA : Maths</a></span>
+                    </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="mdl-mega-footer">
+    <div class="mdl-mega-footer--bottom-section">
+      <div class="mdl-logo">
+        &lt;3
+      </div>
+      <ul class="mdl-mega-footer--link-list">
+        <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+<!-- build:js scripts/main.min.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
