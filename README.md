@@ -1,3 +1,17 @@
+Hey Eduardo,
+
+I didn't how else to contact you. I see the work you have been doing with
+elixir and Haskell, Cool!
+
+I have found a bunch of people that love to try new programming languages and
+experiment. Let's keep in touch on freenode in the "##system32" channel.
+
+https://webchat.freenode.net/
+
+See you,
+Bas
+
+
 # [![Web Starter Kit](https://cloud.githubusercontent.com/assets/110953/11445049/f05512ba-9520-11e5-8fdb-8c8eb5f690d0.jpg)](https://github.com/google/web-starter-kit/releases/latest)
 
 ## Overview
@@ -73,5 +87,5 @@ Contributions, questions and comments are all welcome and encouraged. For code c
 
 ## License
 
-Apache 2.0  
+Apache 2.0
 Copyright 2015 Google Inc
